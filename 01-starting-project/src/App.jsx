@@ -15,14 +15,21 @@ function App() {
         <section id="core-concepts">
           <h2>core concept</h2>
           <ul>
-          {/* <CoreConcept  image={image}  title="fundamental" desc="xyz"/>
-          <CoreConcept  image={image1}  title="frontend" desc="xyz" />
-          <CoreConcept  image={image2}  title="javascript" desc="xyz"/>
-          <CoreConcept  image={image3}  title="react concept" desc="xyz"/>  */}
-          <CoreConcept {...CORE_CONCEPTS[0]}/>
+          {/* <CoreConcept  image={image}  title="fundamental" description="xyz"/>
+          <CoreConcept  image={image1}  title="frontend" description="xyz" />
+          <CoreConcept  image={image2}  title="javascript" description="xyz"/>
+          <CoreConcept  image={image3}  title="react concept" description="xyz"/>  */}
+          {/* <CoreConcept {...CORE_CONCEPTS[0]}/>
           <CoreConcept {...CORE_CONCEPTS[1]}/>
           <CoreConcept {...CORE_CONCEPTS[2]}/>
           <CoreConcept {...CORE_CONCEPTS[3]}/>
+           */}
+           {CORE_CONCEPTS.map(
+            (concept,i)=>(
+              <CoreConcept key={i}{...concept}/>
+            )
+          )
+           }
           </ul>
         </section>
 
@@ -30,12 +37,10 @@ function App() {
           <h2>Examples</h2>
           
           <menu>
-            <TabButton >frontend</TabButton>
-            <TabButton >backend</TabButton>
-            <TabButton >react</TabButton>
-            <TabButton >javascript</TabButton>
-
-
+            <TabButton >JUICE</TabButton>
+            <TabButton >PILA DO</TabButton>
+            <TabButton >MUSAMMI</TabButton>
+            <TabButton >KAA</TabButton>
           </menu>
 
           </section>
