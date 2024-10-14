@@ -1,6 +1,6 @@
 import react from "react";
 
-const TabButton=(props)=>{
+const TabButton=({children})=>{
 function handleClick() {
     console.log("Stupid world")
 }
@@ -9,7 +9,7 @@ function handleClick() {
     return(
         <>
         <li>
-           <button onClick={handleClick}>{props.children}</button>
+           <button onClick={handleClick}>{children}</button>
         </li>
         
         </>

@@ -3,13 +3,14 @@ import image from './assets/components.png';
 import image1 from'./assets/config.png';
 import image2 from'./assets/jsx-ui.png';
 import image3 from'./assets/react-core-concepts.png';
-import TabButton from './component/tabButton/TabButton';
+import TabButton from'./component/TabButton/TabButton';
 import { CORE_CONCEPTS } from './data';
 
 
 function App() {
   return (
     <div>
+
       
       <main>
         <section id="core-concepts">
