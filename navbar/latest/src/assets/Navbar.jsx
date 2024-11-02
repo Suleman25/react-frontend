@@ -5,7 +5,7 @@ return (
 <>
 <nav className='main-nav'>
     <div className='logo'>
-        <h2> ADVANCED ↔ FRONTEND </h2>
+        <img src="https://lionchalk.com/wp-content/uploads/2019/08/cropped-color-logo-no-background-e1563733491815.png" alt="" />
     </div>
 
     <div className='menu'>

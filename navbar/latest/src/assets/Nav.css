@@ -3,18 +3,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #282c34; 
+    background-color: #637190; 
     padding: 20px 40px; 
     width: 75rem;
     position: fixed;
     top: 0;
     left: 0;
+    max-height: 25px;
 }
-.logo h2 {
-    color: #61dafb; 
-    margin: 0px; 
-    font-size: 22px; 
-    font-family:sans-serif;
+.logo img {
+    margin: top; 
+    max-width:60px;
+    width: auto;
 }
 .menu {
     display: flex;
@@ -36,5 +36,6 @@
     transition: color 0.3s ease; 
 }
 .menu a:hover {
-    color: #61dafb; 
+    color: #61dafb;
+    text-decoration: underline; 
 }
