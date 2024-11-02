@@ -1,24 +1,28 @@
 import react from "react";
 
-const TabButton=({children})=>{
+const TabButton=(props)=>{
 function handleClick() {
     console.log("Stupid world")
 }
+console.log(props.isSelect)
 
 
     return(
         <>
-        <li>
+        {/* <li>  
            <button onClick={handleClick}>{children}</button>
+        </li> */}
+        <li>  
+           <button className= {props.isSelect ? 'active' : null} onClick={props.select}>{props.children}</button>
         </li>
         
         </>
     );
-}
+// }
 // const TabButton = (props)=>{
 //     function handleClick(){
 //         console.log ("Stupid World")
-//     }
+    }
 //     return (
 //         <>
 //         <li>
