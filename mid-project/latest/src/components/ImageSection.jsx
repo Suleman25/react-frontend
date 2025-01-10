@@ -1,9 +1,9 @@
 import React from "react";
 
-const ImageSection =({ image,title ,description , end }) =>{
+const ImageSection =({ image,title ,description }) =>{
   
     return (
-        <section>
+    <section>
       <img src={image} alt="" />
       <h1>{title}</h1>
       <p>{description}</p>

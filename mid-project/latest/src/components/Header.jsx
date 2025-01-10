@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = (props) =>{
     console.log(props.isSelected)
 
     return (
         <li>
-             <a className={props.isSelected ? 'active' : null} href="#" onClick={props.select}>{props.children}</a>
+             <Link className={props.isSelected ? 'active' : null} href="#" to={props.to} onClick={props.select}>{props.children}</Link>
              
         </li>         
          
@@ -13,3 +14,4 @@ const Header = (props) =>{
 };
 
 export default Header;
+
